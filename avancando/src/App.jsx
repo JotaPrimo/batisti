@@ -10,6 +10,7 @@ import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
 import Message from "./components/Message";
 import ChangeMessageState from "./components/ChangeMessageState";
+import UserDetails from "./components/Desafio4/UserDetails";
 
 function App() {
   const name = 'Jeremias';
@@ -20,6 +21,14 @@ function App() {
     { id: 2, brand: 'Ford', color : "VERMELHA", newCar: false },
     { id: 3, brand: 'RENAULT', color : "PRETO", newCar: true }
   ]
+
+  const pessoas = [
+    {  nome: "Jailson", idade: 28, peso: 96, id: 1},
+    {  nome: "Jessica Helena", idade: 23, peso: 70, id:2},
+    {  nome: "Caleb Romeo", idade: 3, peso: 12, id:3},
+    {  nome: "Jughead", idade: 3, peso: 10, id:4},
+    {  nome: "Judy", idade: 5, peso: 5, id:5},
+]
 
   {/** passando funcao como prop */}
   function showMessage() {
@@ -34,6 +43,11 @@ function App() {
 
   return (
     <div>
+
+      {pessoas.map((pessoa) => (
+        <UserDetails key={pessoa.id} nome={pessoa.nome} idade={pessoa.idade} peso={pessoa.peso} />
+      ))}
+     
       
       <Message msg={message} />
 
