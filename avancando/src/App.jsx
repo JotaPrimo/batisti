@@ -8,6 +8,8 @@ import CarDetails from "./components/CarDetails";
 import Fragments from "./components/Fragments";
 import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
+import Message from "./components/Message";
+import ChangeMessageState from "./components/ChangeMessageState";
 
 function App() {
   const name = 'Jeremias';
@@ -21,12 +23,21 @@ function App() {
 
   {/** passando funcao como prop */}
   function showMessage() {
-    console.log('gestald118@gmail.com');
-    
+    console.log('gestald118@gmail.com')    
+  }
+
+  const [message, setMessage] = useState("");
+
+  const handleMessage = (msg) => {
+    setMessage(msg)
   }
 
   return (
     <div>
+      
+      <Message msg={message} />
+
+      <ChangeMessageState handleMessage={handleMessage} />
 
       <ExecuteFunction myFunctiocn={showMessage} />
 

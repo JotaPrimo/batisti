@@ -5,3 +5,11 @@ props vem em um objeto no argumento da função
 props chegam na forma de objetos
 
 desestruturando props
+
+state lift
+compoentn filho enviando para o pai
+Estado gerenciado pelo component pai, 
+uma forma de alterar
+um compoentn que consome
+e um component que eleva
+preciso passar a funcao de set como parametro
