@@ -1,0 +1,7 @@
+forma de passar dados do component pai, para o component filho
+carregamos os dados no component pai, e depois envio para os filhos
+props vem em um objeto no argumento da função
+
+props chegam na forma de objetos
+
+desestruturando props

@@ -1,0 +1,3 @@
+recurso para injetar jsx dentro do compoentn
+porem esse jsx vem de um component  pai
+o component age como um container, unindo todos os elementos
