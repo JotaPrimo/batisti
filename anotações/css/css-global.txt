@@ -1,0 +1,2 @@
+css global é usado para estilizar diversos elemtnso em comum, ou fazer reset de css
+devo fazer isso no arquivo index.css, na pasta src
