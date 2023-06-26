@@ -7,6 +7,7 @@ import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
 import Fragments from "./components/Fragments";
 import Container from "./components/Container";
+import ExecuteFunction from "./components/ExecuteFunction";
 
 function App() {
   const name = 'Jeremias';
@@ -18,8 +19,18 @@ function App() {
     { id: 3, brand: 'RENAULT', color : "PRETO", newCar: true }
   ]
 
+  {/** passando funcao como prop */}
+  function showMessage() {
+    console.log('gestald118@gmail.com');
+    
+  }
+
   return (
     <div>
+
+      <ExecuteFunction myFunctiocn={showMessage} />
+
+      <hr />
 
       <Container>
         <p>Este é o conteudo</p>
