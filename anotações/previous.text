@@ -1,0 +1,3 @@
+recurso para pegar o valor original dentro de um set de dados
+
+o primeiro argumento da funcao set sempre será o previous state

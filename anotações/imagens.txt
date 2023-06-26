@@ -1,0 +1,6 @@
+npm create vite@latest <nome do projeto>
+
+
+
+imagens de public posso acessar direto pelo nome
+imagens de src devo importar primeiro

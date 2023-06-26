@@ -1,0 +1,3 @@
+hooks são recursos para acessar e editar valores de variaveis (estados)
+hooks são funções, e precisam ser importados, todos os hooks começam com use
+ex: useNomeDoHook

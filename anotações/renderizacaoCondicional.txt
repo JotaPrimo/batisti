@@ -1,0 +1,4 @@
+Renderização condicional :  { x && <p>se x for true, sim</p>}
+
+if/else no jsx
+if ternario, é igual do php
